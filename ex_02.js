@@ -1,14 +1,14 @@
-// Write your code here...
-function findHousing(housingToFind, housingList) {
-for (let i =0; i < housingList.lenght; i++) {
-if (housingList[i].toLowerCase()===housingToFind.toLowerCase()) {
-return [i, housingList[i]]; 
+function findHousing(housingToFind, housingList) { 
+let index = 0; 
+housingToFind = housingToFind.toLowerCase(); 
+
+while (index < housingList.lenght){
+if (housingList[index].toLowerCase() === housingToFind) {
+return [index+1, housingList[index]]; 
  }
+ index++;
 }
 return null; 
 }
-//Use console.log to debug you're code ! It is very useful
-console.log("I'm debugging")
 
-//Some code to display your function output: (you must modify it but /!\ do not deliver it /!\ ). Only deliver your function
-displayResult([2, "Igloo"])
+displayResult(findHousing("House",["Flat", "House", "Hut", "House", "Igloo"]))
