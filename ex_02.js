@@ -11,4 +11,4 @@ function findHousing(housingToFind, housingList) {
     return null;
 }
 
-displayResult(findHousing("Hut", ["Flat", "House", "Hut", "House", "Igloo"]))
+displayResult(findHousing("Igloo", ["Flat", "House", "Hut", "House", "Igloo"]))
